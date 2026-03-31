@@ -32,8 +32,7 @@ public class Restaurant {
 
     private String imageUrl;
 
-    @OneToMany(mappedBy = "restaurant_id")
-    @JoinColumn(name = "restaurant_id")
+    @OneToMany(mappedBy = "restaurant")
     private List<Food> menu;
 
 }
